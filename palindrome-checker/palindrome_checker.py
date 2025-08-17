@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+"""
+This script takes a list of words provided in an input file,
+verifies which of these words are palindromes, and prints them to the terminal.
+
+Usage:
+    python palindrome_checker.py <input_file>
+"""
+
 # --- Import required librarties
 import sys
 
