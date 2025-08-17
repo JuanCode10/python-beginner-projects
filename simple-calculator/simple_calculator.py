@@ -16,8 +16,8 @@ def add(a: float, b: float) -> float:
     """Return the sum of two numbers.
 
     Args:
-        a (float): The first number for the sum
-        b (float): The second number for the sum
+        a (float): The first addend
+        b (float): The second addend
 
     Returns:
         float: The result of a + b
@@ -28,8 +28,8 @@ def subtract(a: float, b: float) -> float:
     """Return the difference of two numbers.
 
     Args:
-        a (float): The first number for the sum
-        b (float): The second number for the sum
+        a (float): The minuend (number to subtract from)
+        b (float): The subtraend (number to subtract)
 
     Returns:
         float: The result of a - b
@@ -61,7 +61,7 @@ def divide(a: float, b: float) -> float:
     return a/b
 
 def power(a: float, b: float) -> float:
-    """Return the result of raising a base number to an exponent
+    """Return the result of raising a base number to an exponent.
 
     Args:
         a (float): The base number
@@ -73,7 +73,7 @@ def power(a: float, b: float) -> float:
     return pow(a, b)
 
 def square_root(a: float) -> float:
-    """Return the square root of a given number
+    """Return the square root of a given number.
 
     Args:
         a (float): The number to calculate the square root of
@@ -84,7 +84,7 @@ def square_root(a: float) -> float:
     return sqrt(a)
 
 def cube_root(a: float) -> float:
-    """Return the cube root of a given number
+    """Return the cube root of a given number.
 
     Args:
         a (float): The number to calculate the cube root of
@@ -95,7 +95,7 @@ def cube_root(a: float) -> float:
     return cbrt(a)
 
 def show_history(history: list[str]) -> None:
-    """Print on terminal all the operations performed so far
+    """Print on terminal all the operations performed so far.
 
     Args:
         history (list[str]): A list of operations and their results put together in strings
@@ -124,7 +124,7 @@ def calculator() -> None:
         "0": "exit"
     }
     operation_history = []
-    operation= None
+    operation = None
 
     # --- Execute while loop to run all the calculations
     while operation != "exit":
@@ -132,8 +132,8 @@ def calculator() -> None:
         # Choice menu
         print("\n===========================================================================")
         print("Please choose one of the following operations:")
-        print("1. Sum")
-        print("2. Subtract")
+        print("1. Add")
+        print("2. Difference")
         print("3. Multiply")
         print("4. Divide")
         print("5. Power")
@@ -166,6 +166,7 @@ def calculator() -> None:
         except Exception as e:
             print(f"\n\nError:\n\t{e}\n")
             input("Press enter to get back to operation selection")
+            continue
 
         # Calculate operation result
         try:
@@ -189,7 +190,7 @@ def calculator() -> None:
                 msg = f"{args[0]} / {args[1]} = {result}"
                 
             case "5":
-                msg = f"pwr({args[0]}, {args[1]}) = {result}"
+                msg = f"pow({args[0]}, {args[1]}) = {result}"
                 
             case "6":
                 msg = f"sqrt({args[0]}) = {result}"
