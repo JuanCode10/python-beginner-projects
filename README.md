@@ -10,10 +10,10 @@ A collection of small, beginner-friendly Python projects. Each project lives in 
 
 A command-line calculator that supports basic arithmetic operations:
 
-- Add, subtract, multiply, divide  
-- Power, square root, cube root  
-- Keeps a history of all operations performed  
-- Handles invalid input gracefully  
+- Add, subtract, multiply, divide
+- Power, square root, cube root
+- Keeps a history of all operations performed
+- Handles invalid input gracefully
 
 Run it:
 
