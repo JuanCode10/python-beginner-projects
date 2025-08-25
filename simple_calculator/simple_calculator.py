@@ -101,10 +101,14 @@ def show_history(history: list[str]) -> None:
         history (list[str]): A list of operations and their results put together in strings
     """    
 
-    print("All operations performed so far:")
-    
-    for item in history:
-        print(f"\t{item}")
+    if history:
+        print("All operations performed so far:")
+        
+        for item in history:
+            print(f"\t{item}")
+
+    else:
+        print("No operations performed yet.")
 
 def calculator() -> None:
     """Execute the calculator script flow.

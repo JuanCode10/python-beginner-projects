@@ -38,3 +38,15 @@ python3 palindrome_checker.py sample.txt
 ```
 
 Where sample.txt is a text file containning one word per line.
+
+---
+
+## 🧪 Running Unit Tests
+
+This project includes unit tests for each script. To run all unit tests across the project, use Python's unittest discovery feature:
+
+```bash
+python3 -m unittest discover
+```
+
+This command will automatically find and run all test files named `test*.py` in any subdirectory. Make sure your test files follow this naming convention.
