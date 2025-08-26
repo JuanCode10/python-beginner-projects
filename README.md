@@ -6,7 +6,7 @@ A collection of small, beginner-friendly Python projects. Each project lives in 
 
 ## 📂 Project List
 
-### 1. CLI Calculator (`simple-calculator/`)
+### 1. CLI Calculator (`simple_calculator/`)
 
 A command-line calculator that supports basic arithmetic operations:
 
@@ -18,11 +18,11 @@ A command-line calculator that supports basic arithmetic operations:
 Run it:
 
 ```bash
-cd simple-calculator
+cd simple_calculator
 python3 simple_calculator.py
 ```
 
-### 2. Palindrome Checker (`palindrome-checker/`)
+### 2. Palindrome Checker (`palindrome_checker/`)
 
 This script takes a list of words from an input file, checks which ones are palindromes, and prints them to the terminal.
 
@@ -33,7 +33,7 @@ This script takes a list of words from an input file, checks which ones are pali
 Run it:
 
 ```bash
-cd palindrome-checker
+cd palindrome_checker
 python3 palindrome_checker.py sample.txt
 ```
 
