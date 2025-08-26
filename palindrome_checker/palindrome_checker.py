@@ -60,10 +60,16 @@ def get_palindromes(word_pairs:list) -> list:
 
     return [word for word, reversed_word in word_pairs if word == reversed_word]
 
-def main():
+def main(print_palindromes:bool=True) -> list:
     """
-    Execute the main flow of the script
-    """ 
+    Execute the main flow of the script.
+
+    Args:
+        print_palindromes (bool, optional): If True, prints found palindromes to the terminal. Defaults to True.
+
+    Returns:
+        list: List of palindromes found in the input file or provided list.
+    """
 
     # Verify arguments were provided
     if len(sys.argv) < 2:
@@ -77,9 +83,12 @@ def main():
     palindromes = get_palindromes(word_pairs)
 
     # Show palindromes in terminal
-    print("Found palindromes:")
-    for word in palindromes:
-        print(f"\t{word}")
+    if print_palindromes:
+        print("Found palindromes:")
+        for word in palindromes:
+            print(f"\t{word}")
+
+    return palindromes
 
 if __name__ == "__main__":
 
