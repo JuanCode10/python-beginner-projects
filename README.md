@@ -4,6 +4,10 @@ A collection of small, beginner-friendly Python projects. Each project lives in 
 
 ---
 
+## Requirements
+
+- Python 3.12.0 or higher
+
 ## 📂 Project List
 
 ### 1. CLI Calculator (`simple_calculator/`)
