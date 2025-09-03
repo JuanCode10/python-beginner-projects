@@ -1,0 +1,21 @@
+name: 'Run Python Unit Tests'
+description: 'Checkout the repo, install python and run the unit test'
+
+# --- Action Inputs
+inputs:
+  test-file-path:
+    description: 'Path to the python test file.'
+    required: true
+
+# --- Action Execution Flow
+runs:
+  using: 'composite'
+  steps:
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.12'
+
+    - name: Run Tests
+      shell: bash
+      run: python3 -m unittest ${{ inputs.test-file-path }}

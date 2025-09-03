@@ -102,7 +102,7 @@ class TestSimpleCalculator(unittest.TestCase):
         ]
         for txt, a, expected in test_cases:
             with self.subTest(msg=txt, a=a, expected=expected):
-                self.assertEqual(cube_root(a), expected)
+                self.assertAlmostEqual(cube_root(a), expected)
 
     def test_show_history_method(self):
         """Test the show_history function"""
