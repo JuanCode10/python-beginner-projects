@@ -17,5 +17,7 @@ runs:
         python-version: '3.12'
 
     - name: Run Tests
+      env:
+        TEST: ${{ inputs.test-file-path }}
       shell: bash
-      run: python3 -m unittest ${{ inputs.test-file-path }}
+      run: python3 -m unittest "$TEST"
