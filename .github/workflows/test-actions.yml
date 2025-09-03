@@ -28,3 +28,14 @@ jobs:
         uses: ./.github/actions/run-python-tests
         with:
           test-file-path: simple_calculator/test_simple_calculator.py
+
+  guess-number-game-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Palindrome Checker Test
+        uses: ./.github/actions/run-python-tests
+        with:
+          test-file-path: guess_number_game/test_guess_number_game.py

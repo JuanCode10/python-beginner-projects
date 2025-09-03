@@ -34,6 +34,7 @@ This script takes a list of words from an input file, checks which ones are pali
 - Cleans up whitespace and ignores empty lines
 - Identifies and lists all palindromes found
 
+
 Run it:
 
 ```bash
@@ -41,7 +42,25 @@ cd palindrome_checker
 python3 palindrome_checker.py sample.txt
 ```
 
-Where sample.txt is a text file containning one word per line.
+Where sample.txt is a text file containing one word per line.
+
+### 3. Guess the Number Game (`guess_number_game/`)
+
+A command-line game where you try to guess a randomly generated number based on the selected difficulty:
+
+- Difficulty levels: easy (0-10), normal (0-50), hard (0-100)
+- The game provides feedback after each guess: "higher", "lower", or "correct"
+- Tracks all your guesses and the number of attempts
+- Handles invalid input gracefully
+
+Run it:
+
+```bash
+cd guess_number_game
+python3 guess_number_game.py --difficulty easy
+```
+
+You can also use `--difficulty normal` or `--difficulty hard` (default is normal). The game will prompt you to guess until you find the correct number.
 
 ---
 
