@@ -4,9 +4,32 @@ A collection of small, beginner-friendly Python projects. Each project lives in 
 
 ---
 
+## 🚀 Getting Started
+
+Clone this repository:
+
+```bash
+git clone https://github.com/JuanCode10/python-beginner-projects.git
+cd python-beginner-projects
+```
+
+Make sure you have Python 3.12.0 or higher installed.  
+To run any project, navigate into its directory and follow the usage instructions below.
+
+---
+
 ## Requirements
 
 - Python 3.12.0 or higher
+
+---
+
+## 📦 Dependencies
+
+All scripts use only Python's standard library.  
+No external dependencies are required.
+
+---
 
 ## 📂 Project List
 
@@ -26,6 +49,8 @@ cd simple_calculator
 python3 simple_calculator.py
 ```
 
+---
+
 ### 2. Palindrome Checker (`palindrome_checker/`)
 
 This script takes a list of words from an input file, checks which ones are palindromes, and prints them to the terminal.
@@ -34,7 +59,6 @@ This script takes a list of words from an input file, checks which ones are pali
 - Cleans up whitespace and ignores empty lines
 - Identifies and lists all palindromes found
 
-
 Run it:
 
 ```bash
@@ -42,7 +66,9 @@ cd palindrome_checker
 python3 palindrome_checker.py sample.txt
 ```
 
-Where sample.txt is a text file containing one word per line.
+Where `sample.txt` is a text file containing one word per line.
+
+---
 
 ### 3. Guess the Number Game (`guess_number_game/`)
 
@@ -60,7 +86,8 @@ cd guess_number_game
 python3 guess_number_game.py --difficulty easy
 ```
 
-You can also use `--difficulty normal` or `--difficulty hard` (default is normal). The game will prompt you to guess until you find the correct number.
+You can also use `--difficulty normal` or `--difficulty hard` (default is normal).  
+The game will prompt you to guess until you find the correct number.
 
 ---
 
@@ -72,4 +99,27 @@ This project includes unit tests for each script. To run all unit tests across t
 python3 -m unittest discover
 ```
 
-This command will automatically find and run all test files named `test*.py` in any subdirectory. Make sure your test files follow this naming convention.
+This command will automatically find and run all test files named `test*.py` in any subdirectory.  
+Make sure your test files follow this naming convention.
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
+
+---
+
+## 👤 Author
+
+**JuanCode10**  
+[GitHub Profile](https://github.com/JuanCode10)
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and feedback are welcome!  
+Feel free to open issues or pull requests to improve these beginner projects.
+
+---
